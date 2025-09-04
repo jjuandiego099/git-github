@@ -24,6 +24,23 @@ Route::get('/', function () {
     echo $message;
     echo "<br>";
     echo printUser($name);
+
+    $lista = ["juan", "Fancho", 12];
+    echo $lista[1];
+    $listaProductos = [
+        "camisa" => [
+            "nombre" => 'camiisa',
+            "talla" => '19'
+        ],
+        "pantalon" => [
+            "nombre" => 'pantalon',
+            "talla" => '34'
+        ]
+    ];
+    $listaProductos["camisa"]["nombre"];
+    for($i=0;$i<count($lista);$i++){
+        echo $lista[$i];
+    }
 });
 function printUser($name)
 {
