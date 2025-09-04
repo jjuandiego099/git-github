@@ -71,7 +71,7 @@
 </head>
 <body>
 
-  <form class="contact-form">
+  <form class="contact-form" method="GET" action="{{route('contacto.store')}}">
     <h2>Contáctanos</h2>
     <input type="text" name="name" placeholder="Nombre" required>
     <input type="email" name="email" placeholder="Correo" required>
